@@ -1,30 +1,66 @@
-# macOS
+# 系统文件
 .DS_Store
+Thumbs.db
+Desktop.ini
 
-# Python
+# 依赖与环境
+.venv/
+venv/
+env/
+node_modules/
+
+# Python 缓存
 __pycache__/
 *.py[cod]
-.venv/
 .pytest_cache/
 .ruff_cache/
+.mypy_cache/
+.tox/
+.eggs/
 *.egg-info/
+.coverage
+htmlcov/
+
+# 构建产物 / 缓存
 dist/
 build/
-
-# Node
-node_modules/
-dist/
+out/
+target/
 .next/
+.nuxt/
+.cache/
+.parcel-cache/
+coverage/
+.gradle/
+
+# 日志
 *.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# Jupyter
-.ipynb_checkpoints/
+# 本地环境变量 / 密钥
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+secrets/
 
-# IDE
+# 编辑器 / IDE
 .idea/
 .vscode/
+*.iml
 *.swp
+*.swo
 
-# 环境变量
-.env
-.env.local
+# 临时文件 / 本地数据库
+*.tmp
+*.temp
+*.bak
+*.sqlite
+*.sqlite3
+*.db
