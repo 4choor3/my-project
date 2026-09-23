@@ -10,14 +10,16 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": ">=22"
+  },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "12.5.1",
+      "version": ">=12",
       "onFail": "download"
     }
   },
-  "packageManager": "pnpm@12.5.1",
   "type": "module",
   "dependencies": {
     "express": "^5.2.1"
