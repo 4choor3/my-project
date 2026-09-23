@@ -9,7 +9,7 @@
 | 工作区 | 技术栈 | 用途 |
 | --- | --- | --- |
 | `frontend/` | Node.js 26 · pnpm 12+ · Express 5 | 前端服务（当前为基础脚手架，提供 HTTP 服务入口） |
-| `backend/` | Python 3.12+ · uv | Python 后端与算法练习脚本集合 |
+| `backend/` | Python 3.14+ · uv | Python 后端与算法练习脚本集合 |
 | `notebooks/` | Jupyter（uv 管理依赖） | 交互式 Notebook 实验与学习 |
 
 仓库已配置 GitHub Actions，对 `frontend/` 与 `backend/` 的改动分别触发对应的 CI 流水线。
@@ -17,7 +17,7 @@
 ## 技术栈
 
 - **前端**：Node.js `26`、包管理器 `pnpm >= 12`、Web 框架 `Express ^5.2.1`
-- **后端**：Python `>=3.12`、包与虚拟环境管理 `uv`、运行时依赖 `numpy` / `pandas`、开发依赖 `pytest` / `ruff`
+- **后端**：Python `>=3.14`、包与虚拟环境管理 `uv`、运行时依赖 `numpy` / `pandas`、开发依赖 `pytest` / `ruff`
 - **Notebooks**：Jupyter Notebook，依赖同样由 `uv` 管理
 - **CI/CD**：GitHub Actions（`.github/workflows/`）
 
@@ -52,7 +52,7 @@ my-project/
 ### 环境要求
 
 - Node.js `26`（建议通过 `frontend/.node-version` 指定的版本）
-- Python `>=3.12` 与 [`uv`](https://github.com/astral-sh/uv)
+- Python `>=3.14` 与 [`uv`](https://github.com/astral-sh/uv)
 - `pnpm >= 12`（在 `frontend/package.json` 的 `devEngines` 中声明）
 
 ### 后端（backend）
